@@ -10,8 +10,8 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<context:component-scan base-package="controller"></context:component-scan>
-	<mvc:annotation-driven/>
+	<context:component-scan base-package="controller,dao,service"></context:component-scan>
+	<mvc:annotation-driven />
 	<!-- 完成视图对应 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/"></property>
