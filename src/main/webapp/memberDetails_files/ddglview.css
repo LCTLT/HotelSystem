@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+a:focus{outline:none;}
+.main{ height:auto; width:100%;background: #f7f7f7;}
+.main-in{ height:auto; width:1190px; margin:0 auto; padding:20px 0 40px;}
+.ddxq li{ width:1190px; height:auto; background:#fff;margin-bottom:20px; padding:20px 30px;position: relative;box-sizing: border-box;}
+.ddxq li div.title{height:37px;position:relative;font-size:20px; font-family:"微软雅黑";line-height:1;margin-left:0px; color:#333333;}
+.ddxq ul.ddxx{overflow: hidden;}
+.ddxq ul.ddxx li{ border-top:none; height:auto;width:31%;float: left;font-size:16px;background:none; color:#333333;line-height:40px; margin-bottom:0px;padding:0;}
+.ddxq ul.ddxx li span{ display:inline-block; margin-right: 8px;}
+.ddxq ul.ddxx li span:first-child{ color:#666; font-weight:normal;}
+.ddxq ul.ddx-box li span:first-child{ color:#666; font-weight:normal;}
+.ddxq ul.ddxx li span em{ font-style:normal; color:#333333;}
+.ddxq ul.ddxx li u{ font-size:14px; color:#f72323;text-decoration:none;font-family:"微软雅黑";}
+.ddxq ul.ddxx li i{color:#f72323; font-style:normal;font-family:"微软雅黑";}
+.ddxq li div{ height:45px;color:#666;font-size: 16px;}
+/*.tjdd_div{ height:45px; line-height:45px; color:#666; margin-bottom:15px;}
+.tjdd_div input{ margin-right:5px;vertical-align: middle; margin-top:-3px;}
+.tjdd{ width:150px; height:45px; background:#ff9419; display:inline-block; border-radius:4px; font-size:20px; text-align:center; line-height:45px; font-family:"微软雅黑"; color:#fff; text-decoration:none; float:right;} */
+.ddbgxx{height: 30px;width: 100%; display: inline-block; line-height:25px;text-align: center;}
+.ddxq li div.ddlk-xx{min-height: 30px; height: auto;width: 100%; background: #fff;}
+.ddxq ul.ddlk{border-left: 1px solid #e1e1e1; border-top:none; width: 100%;height: auto;background: #fff;}
+.ddxq ul.ddlk li{width: 22%;height:45px;border: 1px solid #e1e1e1;line-height:45px;background: #fff; margin-left:-1px;text-align: center;box-sizing:border-box;border-top:none;}
+.ddxq ul.ddlk:first-child li{border-top: 1px solid #e1e1e1;background: #f2f9fe;height:40px;line-height:40px;}
+.ddxq li div .ddmc{float:left; margin-left:15px; margin-top:5px; color:#333; cursor:pointer; font-size:16px;}
+.ddxq li div .ddmc:hover{color: #f72323;}
+.ddxq ul.ddxx li a{line-height: 18px; display: inline-block;vertical-align: middle;}
+.ddxq ul.ddxx li a:hover{color: #f72323 !important;}
+.ddbgxx p{margin-right: 12px; text-align: left;font-size:16px;}
+.ddxx_adr{height: 40px; line-height:1;font-size: 16px;}
+.ddxx_adr span{margin: 0 5px;}
+.ddxx_adr span:last-child{color: #f72323;}

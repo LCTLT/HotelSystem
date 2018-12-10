@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="controller"></context:component-scan>
+	<mvc:annotation-driven/>
+	<!-- 完成视图对应 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<mvc:resources location="/login_files/" mapping="/login_files/**"/>
+	<mvc:resources location="/register_files/" mapping="/register_files/**"/>
+	<mvc:resources location="/index_files/" mapping="/index_files/**"/>
+	<mvc:resources location="/images/" mapping="/images/**"/>
+	<mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
+	<mvc:resources location="/hotel_files/" mapping="/hotel_files/**"/>
+	<mvc:resources location="/hotelDetails_files/" mapping="/hotelDetails_files/**"/>
+	<mvc:resources location="/member_files/" mapping="/member_files/**"/>
+	<mvc:resources location="/memberDetails_files/" mapping="/memberDetails_files/**"/>
+	
+</beans>
