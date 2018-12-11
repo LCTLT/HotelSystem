@@ -1,0 +1,86 @@
+.tc {
+	min-height: 0rem;
+	width: 20rem;
+	padding: 10px;
+	float: right;
+	background: #FFF;
+	border-radius: 4px;
+	position: relative;
+}
+
+.tc em {
+	position: absolute;
+	background: #fff;
+	right: 10px;
+	top: 12px;
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+	font-style: normal;
+	cursor: pointer;
+	background: url(/xtfsq/themes/images/cancle.png) no-repeat;
+}
+
+.tc p {
+	width: 90%; /* position:absolute;left:50%;margin-left: -40%; */
+	margin: .5rem auto;
+	font-size: 16px;
+	text-align: center;
+}
+/*弹出框*/
+.tck {
+	width: 70%;
+	width: 280px;
+	height: auto;
+	z-index: 9999;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -140px;
+	margin-top: -100px;
+	display: none;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #fff;
+	color: #333;
+	padding: 0px;
+}
+
+.tck .row {
+	border-top: 1px solid #eee;
+	width: 100%;
+	margin: 0px;
+	background: #fff;
+	padding: 3px 0px 3px;
+}
+
+.tck .row div {
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.tck .row div:first-child {
+	border-right: 1px solid #eee;
+}
+
+.tck span {
+	padding: 15px;
+	display: inline-block;
+}
+
+.col-xs-6 {
+	width: 50%;
+	float: left;
+}
+dd a {
+	color: #fff;
+}
+
+.mddheight {
+	height: auto !important;
+}
+
+.mddheight2 {
+	height: 44px !important;
+}

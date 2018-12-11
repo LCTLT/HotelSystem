@@ -16,7 +16,7 @@ public class UserSerivceImpl implements UserService {
 	public User loginInfo(String phone, String password) {
 		return userMapper.loginInfo(phone, password);
 	}
-	
-	
-
+	public int loginUser(String phone) {
+		return userMapper.loginUser(phone);
+	}
 }

@@ -8,4 +8,7 @@
 		select phone,pwd from user where phone=#{phone} and pwd=#{password}
 	</select>
 	
+	<select id="loginUser" resultType="int" parameterType="String">
+	   select count(id) from user where phone=#{phone}
+	</select>
 </mapper>

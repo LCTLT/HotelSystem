@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+body, div , ul, ol, li, input, p,{ margin:0; padding:0; }
+body {font:12px/180% Arial, Helvetica, sans-serif, "宋体"; background:#fff; line-height:20px; width:100%;}	
+		
+*{margin:0;padding:0;list-style-type:none;}			
+a,img{border:0;}
+img{ display:block;}
+input, button, select, textarea { outline:none; border:none;} 
+textarea { resize:none; }
+a { text-decoration:none; }
+a:focus{outline:none;}
+/*头部开始*/  
+.logo{height: 57px;width:367px;float:left;margin-top:-20px;}
+.logo img{display: block;}
+.logo-in{ height:51px; width:1190px; margin-left:auto;margin-right:auto; padding-top:5px;}
+.title{ height:38px; width:592px; float:right; margin-top:14px; display:inline-table;}
+.title dl{ float:left; padding-left:49px; overflow:hidden;}
+/* .title dl.left{ width:137px; background:url(/xtfsq/themes/images/dl_left.png?timestamp=2015090216) no-repeat;}
+.title dl.center{ width:135px; background:url(/xtfsq/themes/images/dl_center.png?timestamp=2015090216) no-repeat;}
+.title dl.right{ width:165px; background:url(/xtfsq/themes/images/dl_right.png?timestamp=2015090216) no-repeat;} */
+.title dl dt{ color:#000;}
+.title dl dd{ color:#a2a2a2; font-size:12px;}
+.title_icon{float: right;height:77px;display: inline-block;}
+.title_icon img{height: 100%;}
+/*头部结束*/
+
+/*中间开始*/
+.content{ height:460px; width:100%;min-width: 1190px; padding:30px 0; box-sizing: border-box; background:url(../login_files/back.jpg) no-repeat center;}
+.content-in{ height:400px; width:1190px;margin-left:auto;margin-right:auto}
+.ad{ height:393px; width:637px; float:left; position:relative; overflow:hidden; border:1px solid #e1e1e1;}
+.login{ height:393px; width:480px; float:right; background:#FFF; border-radius:4px; position:relative;margin-right: 50px;}
+.login input{ width:300px; height:39px; border:1px solid #e1e1e1; margin-bottom:15px; padding-left:40px;  color:#000; line-height:37px;box-sizing:border-box;}
+.login input.verification{ width:165px; float:left; }
+.login input.current{border:1px solid #e1e1e1;}
+.i18n{line-height:1;margin-bottom: 25px;font-size:24px;margin:15px 0 0;text-align: center;}
+.i18n li{ float:left; height:50px; font-size:18px; width:158px; text-align:center; line-height:50px; background:#ddd; color:#666; cursor:pointer;}
+.i18n li:last-child{ width:159px;}
+.i18n li.current{ background:#fff; color:#333;}
+.i18n a{ color:#1e63b0;}
+.i18n a:hover{ color:#f72323;}
+.login b{ font-size:16px; color:#333;}
+.login h3{height:40px; border-bottom:1px solid #e1e1e1; line-height:40px; padding-left:15px; margin-bottom:30px; font-size:16px; font-weight:normal;}
+.login em{position:absolute; background:#fff;  right:10px; top:12px; height:14px; width:14px; display:inline-block; font-style:normal; cursor:pointer; background: url(/xtfsq/themes/images/cancle.png?timestamp=2015090216) no-repeat;}
+.loginTipWarn{ width:300px; height:22px;line-height:22px; position:absolute; left:88px; top:42px;box-sizing:border-box; padding-left:28px; background:#ffebeb url(/xtfsq/themes/images/warn.png?timestamp=2015090216) no-repeat; border:1px solid #f72323; color:#f72323; background-position:5px center;margin-left: 2px;}
+label{ vertical-align:middle; color:#828282; margin-left:5px; line-height:12px;}
+u{text-decoration:none;}
+.login input.dagou-in{ height:12px; width:12px; border:0; vertical-align:middle; margin-top:0px;}
+.dagou{ width:259px;  overflow:hidden; padding-top:15px;}
+.verify{position: relative; height:39px; border-radius:3px;width:83px; float:left; text-align: center; margin-left:5px; text-align:center; line-height:39px; cursor:pointer; margin-top:0px;}
+.login .verify u{ cursor:pointer; color:#1e63b0; padding-left:0px; text-decoration: underline; font-size:12px;}
+.verify u:hover{ color:#03F;}
+.verify a{position: absolute;left:0;top:0;}
+.username{ background:url(../register_files/yh.jpg) no-repeat ; background-size:8%; background-position:8px center}
+.password{ background:url(../register_files/mm.jpg) no-repeat ;background-size:8%; background-position:10px center}
+.usercode{ background:url(../register_files/mm.jpg) no-repeat ;background-size:12%; background-position:10px center}
+.xian{ height:1px; width:319px; background:#e6e6e6; position:absolute; left:0; bottom:85px; font-size:0;}
+
+.login ul li{text-align:center;color: #666666;}
+.login ul li span{display: inline-block;}
+.login ul li:frist{text-align:center}
+.wjmm a{display:inline-block;color:#666666;text-decoration:none;width:150px;height:24px;line-height:24px;border-radius:2px;font-size:14px;margin-left:245px;}
+.kszc a{display:inline-block;color:#666666;text-decoration:none;width:100%;text-align: center; height:24px;line-height:24px;border-radius:2px;font-size:14px;}
+.login span a:hover{color:#f72323;}
+ 
+.dlbg{width:664px;height: 393px;overflow: hidden; float: left;/* border: 1px solid #e2e2e2; */}
+.dlbg img{width: 100%;}
+.zc{ width:480px;height: 383px;float: right; background: #fff;padding:0 0 10px;position: relative;margin-right: 50px;}
+.zc ul{text-align: center;}
+.zc ul li{ margin:10px 0; color:#666666;text-align: center;height: 39px;}
+.zc ul li input{height:37px; line-height:37px;border: 1px solid #e1e1e1; color: #333333; width:200px;width:258px;padding-left:40px;}
+.zc ul li u{ margin-left:10px; color:#f72323;}
+.zc ul li span{ height:35px; width:75px; line-height:35px; text-align:center; display:inline-block; color:#fff; background:#f72323; margin-left:68px; cursor:pointer;}
+.zc li em{ height:39px; line-height:39px; width:83px; text-align:center; text-indent:0em;display:inline-block; color:#666666; background:#eaeaea; font-style:normal; margin-left:2px; cursor:pointer; border-radius:2px; text-align:center;}
+.zc li a{ margin-left:76px; color:#666666; text-decoration:none;}
+.zc li a:hover{color:#f72323;}
+.zc h3{font-size:16px; font-weight:normal; padding-left:20px; position:relative;}
+.zc i{display:inline-block; width:5px; height:16px; background:#f72323; position:absolute; top:2px; left:10px;}
+.zc a{ display:inline-block;color:#666666; text-decoration:none; width:75px; height:24px; line-height:24px; text-align:center; border-radius:2px;font-size:14px;}
+/*中间结束*/

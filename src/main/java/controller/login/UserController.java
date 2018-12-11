@@ -1,8 +1,14 @@
 package controller.login;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.catalina.Session;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import pojo.User;
 import service.login.UserService;
@@ -12,21 +18,28 @@ import service.login.UserService;
  */
 @Controller
 public class UserController {
-	
 	@Autowired
 	private UserService userService;
 	
 	@RequestMapping("login")
-	public String login() {
-		String phone = "15211792615";
-		String password = "123456";
+	@ResponseBody
+	public String login(@RequestParam("phone")String phone,@RequestParam("password")String password,HttpServletRequest request) {
 		User user = userService.loginInfo(phone, password);
 		if(user!=null) {
-			System.out.println("µÇÂ¼³É¹¦");
-			return "index";
+			 request.getSession().setAttribute("user",user);
+			return "1";
 		}else {
-			System.out.println("µÇÂ¼Ê§°Ü");
-			return "login";
+			return "2";
+		}
+	}
+	@RequestMapping("loginUser")
+	@ResponseBody
+	public String loginUser(@RequestParam("phone")String phone) {
+		int result = userService.loginUser(phone);
+		if(result>0) {
+			return "1";
+		}else {
+			return "2";	
 		}
 	}
 }
