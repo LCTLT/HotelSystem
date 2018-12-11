@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.login.UserMapper">
+	
+	
+	<select id="loginInfo" resultType="pojo.User">
+		select phone,pwd from user where phone=#{phone} and pwd=#{password}
+	</select>
+	
+	<select id="loginUser" resultType="int" parameterType="String">
+	   select count(id) from user where phone=#{phone}
+	</select>
+</mapper>

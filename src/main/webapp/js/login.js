@@ -14,7 +14,7 @@ if(window.top.location.href!=location.href)window.top.location.href=window.top.l
 								$("#loginTip").removeClass("loginTipInfo").addClass("loginTipWarn");
 								$("#loginTip").html("账号不存在!");
 								return;
-							}
+							} 
 						});
 						$.post("login",{phone:$("#sjh").val(),password:$("#mm").val()},function(dd){
 							if(dd==1){
